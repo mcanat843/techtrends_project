@@ -1,11 +1,8 @@
 FROM python:2.7
-WORKDIR /app
+WORKDIR /techtrends
 COPY . . 
 RUN pip install -r requirements.txt 
-
 RUN python init_db.py
-EXPOSE 7111
-ENTRYPOINT ["python"]
-
-CMD ["app.py"]
+EXPOSE 3111
+CMD ["python","app.py"]
 
