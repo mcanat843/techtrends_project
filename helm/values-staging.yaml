@@ -1,0 +1,17 @@
+namespace:
+  name: staging
+spec:
+ replicas: 3
+  ports:
+    - port: 5111
+ 
+   resources:
+            requests:
+              cpu: "300m"
+              memory: "90Mi"
+              
+            limits:
+              cpu: "500m"
+              memory: "128Mi"
+                      
+        resources: {}

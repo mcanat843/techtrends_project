@@ -1,0 +1,19 @@
+namespace:
+  name: prod
+spec:
+ replicas: 5
+  ports:
+    - port: 7111
+  image:
+     pullpolicy: Always
+
+   resources:
+            requests:
+               cpu: "350m"
+              memory: "128Mi"
+             
+            limits:
+              cpu: "500m" 
+              memory: "256Mi"
+                     
+    resources: {}
